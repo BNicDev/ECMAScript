@@ -5,8 +5,8 @@ const fnAsync=()=> {
         : reject(new Error("Error!"));
     });
 }
-const anotherFn =  ()=>{
-    const something =  fnAsync();
+const anotherFn = async ()=>{
+    const something = await fnAsync();
     console.log(something);
     console.log("hello")
 }
